@@ -3,7 +3,7 @@ const app = express();
 const hbs = require("hbs");
 const mongoose = require("mongoose");
 const path = require("path");
-const Port = process.env.PORT || 8080;
+const port = Process.env.PORT || 3000 ;
 require("./db/conn")
 
 const saveData = require("./models/saveData");
@@ -101,6 +101,6 @@ app.post("/login", async (req, res) => {
 })
 
 //listing the server
-app.listen(Port, (err) => {
-    console.log(`Server in Running at port ${Port}`);
+app.listen(port ,(err) => {
+    console.log(`Server in Running at port ${port}`);
 })
