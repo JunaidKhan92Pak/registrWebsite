@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>register</title>
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="registration-div-body">
+        <div class="register-Img">
+
+        </div>
+        <div class="register-div">
+            <div class="titel"> Register Here</div>
+            <div class="user-info">
+                <form action="/register" method="post">
+                    <div class="row">
+                        <div class="inputBox">
+                            <span class="input-box">First Name </span>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter Your Frist Name"
+                                required>
+                        </div>
+                        <div class="inputBox">
+                            <span class="input-box">Last Name </span>
+                            <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name"
+                                required>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="inputBox">
+                            <span class="input-box">Email</span>
+                            <input type="email" id="Email" name="email" placeholder="Enter Your Email" required>
+
+                        </div>
+                        <div class="inputBox">
+                            <span class="input-box">Phone</span>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="inputBox">
+                            <span class="input-box">Password</span>
+                            <input type="text" name="password" id="password" placeholder="Enter Your Password "
+                                required>
+                        </div>
+                        <div class="inputBox">
+                            <span class="input-box">Confirm Password</span>
+                            <input type="text" name="confrimpassword" id="confrimpassword"
+                                placeholder="Confrim Your Password" required>
+                        </div>
+                    </div>
+            </div>
+            <div class="submit-btn">
+                <button type="submit" class="submit">Register</button>
+                <button type="reset" class="Reset">Cancel</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <footer>This is created by JunaidSultan92pk Copyright@2022</footer>
+</body>
+ <script src="App.js"></script>
+</html>
