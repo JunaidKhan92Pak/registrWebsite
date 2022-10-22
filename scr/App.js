@@ -57,7 +57,7 @@ app.post("/register", async (req, res) => {
                     password: Password,
                     comfrimpassword: confrimPassword
                 })
-                // const result = await userSave.save()
+                const result = await userSave.save()
                 res.status(201).render("home");
             }
             else {
