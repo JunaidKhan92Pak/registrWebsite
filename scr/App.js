@@ -3,7 +3,7 @@ const app = express();
 const hbs = require("hbs");
 const mongoose = require("mongoose");
 const path = require("path");
-const port = Process.env.PORT || 3000 ;
+const port = process.env.PORT || 3000 ;
 require("./db/conn")
 
 const saveData = require("./models/saveData");
